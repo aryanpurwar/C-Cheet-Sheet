@@ -83,3 +83,9 @@ main .description p{
         font-size: smaller;
     }
 }
+
+
+footer p{
+    color:white;
+    text-align: center;
+}
