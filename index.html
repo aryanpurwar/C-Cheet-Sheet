@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding cheat sheet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>C++ Coding Cheat Sheet</h1>
+    </header>
+
+    <main>
+
+        <div class="heading">
+            <h3>1. C++ Boiler Plate</h3>
+        </div>
+        <div class="description">
+<pre class="text1">#include &lt;iostream&gt;
+using namespace std;                
+int main()
+{
+    <p>/*Your code here*/</p>  
+return 0;
+}</pre>
+            <button class="cpp">Copy</button>
+        </div>
+
+        <div class="heading">
+            <h3>2. Sum of two numbers</h3>
+        </div>
+        <div class="description">
+<pre class="text2"><p>//Sum of two numbers</p>
+#include &lt;iostream&gt;
+using namespace std;
+int main(){
+    int num1, num2, sum=0;
+    cout<<"Enter first number: ";
+    cin>>num1;
+    cout<<"Enter second number: ";
+    cin>>num2;
+    sum=num1+num2;
+    cout<<"Sum of num1 and num2 is: "&lt;&lt;sum;
+return 0; 
+}</pre>
+            <button class="add">Copy</button>
+        </div>
+
+        <div class="heading">
+            <h3>3. Swapping two numbers</h3>
+        </div>
+        <div class="description">
+<pre class="text3"><p>//Swapping two numbers</p>
+#include &lt;iostream&gt;
+using namespace std;
+int main(){
+    int a,b;
+    cout<<"Enter first number: ";
+    cin>>a;
+    cout<<"Enter second number: ";
+    cin>>b;
+    cout<<"Numbers before swapping: "&lt;&lt;a&lt;&lt;" and "&lt;&lt;b&lt;&lt;endl;
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    cout<<"Numbers after swapping: "&lt;&lt;a&lt;&lt;" and "&lt;&lt;b;
+return 0;
+}</pre>
+            <button class="swap">Copy</button>
+        </div>
+
+            <div class="heading"><h3>4. Simple Interest</h3></div>
+            <div class="description">
+<pre class="text4"><p>//Simple Interest</p>
+#include &lt;iostream&gt;
+using namespace std;
+int main(){
+    int interest;
+    int p,r,t;
+    cout<<"Enter Principle amount: ";
+    cin>>p;
+    cout<<"Enter Rate of Interest: ";
+    cin>>r;
+    cout<<"Enter Time: ";
+    cin>>t;
+    interest=(p*r*t)/100;
+    cout<<"Simple Interest is: "&lt;&lt;interest;
+return 0;
+}</pre>
+                <button class="interest">Copy</button>
+            </div>
+            
+            <div class="heading"><h3>5. Factorial of a number</h3></div>
+            <div class="description">
+<pre class="text5"><p>//Finding Factorial of a number</p>
+#include &lt;iostream&gt;
+using namespace std;
+int main(){ 
+    int n;
+    cout<<"Enter number: ";
+    cin>>n;
+    int fact = 1;
+    for(int i=1; i&lt;=n; i++){
+        fact=fact*i;
+    }
+    cout<<"Factorial of n is: "&lt;&lt;fact;
+}</pre>
+                <button class="fact">Copy</button>
+            </div>
+
+            <div class="heading"><h3>6. Even or Odd</h3></div>
+            <div class="description">
+<pre class="text6"><p>//Even or Odd</p>
+#include &lt;iostream&gt;
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter number: ";
+    cin>>n;
+    if(n%2==0){
+        cout<<"Number is even";
+    }
+    else{
+        cout<<"Number is odd";
+    }
+return 0;
+}</pre>
+                <button class="evenOdd">Copy</button>
+            </div>
+
+            <div class="heading"><h3>7. Maximum in three numbers</h3></div>
+            <div class="description">
+<pre class="text7"><p>//Maximum in three numbers</p>
+#include &lt;iostream&gt;
+using namespace std;
+int main(){
+    int a,b,c;
+    cout<<"Enter first number: ";
+    cin>>a;
+    cout<<"Enter second number: ";
+    cin>>b;
+    cout<<"Enter third number: ";
+    cin>>c;
+    if(a>b && a>c){
+        cout<<"Maximum is: "&lt;&lt;a;
+    }
+    else if(b>a && b>c){
+        cout<<"Maximum is: "&lt;&lt;b;
+    }
+    else{
+        cout<<"Maximum is: "&lt;&lt;c;
+    }
+return 0;
+}</pre>
+                <button class="maximum">Copy</button>
+            </div>
+
+            <div class="heading"><h3>8. Taking input in arrays</h3></div>
+            <div class="description">
+<pre class="text8"><p>//Taking input in arrays</p>
+#include &lt;iostream&gt;
+using namespace std;
+int main(){
+    int size;
+    cout<<"Enter size of array: ";
+    cin>>size;
+    int arr[100];
+    cout<<"Enter elements of array"&lt;&lt;endl;
+    <p>//Taking input</p>
+    for(int i=0; i&lt;size; i++){
+        cin>>arr[i];
+    }
+    <p>//Printing array</p>
+    for(int i=0; i&lt;size; i++){
+        cout&lt;&lt;arr[i]&lt;&lt;" ";
+    }
+return 0;
+}</pre>
+                <button class="arrayInput">Copy</button>
+            </div>
+
+            <div class="heading"><h3>9. Finding maximum in arrays</h3></div>
+            <div class="description">
+<pre class="text9"><p>//Finding maximum in arrays</p>
+#include &lt;iostream&gt;
+using namespace std;
+int main(){
+    int size;
+    cout<<"Enter size of array: ";
+    cin>>size;
+    int arr[100];
+    cout<<"Enter elements of array"&lt;&lt;endl;
+    <p>//Taking input</p>
+    for(int i=0; i&lt;size; i++){
+        cin>>arr[i];
+    }
+    <p>//Printing array</p>
+    for(int i=0; i&lt;size; i++){
+        cout&lt;&lt;arr[i]&lt;&lt;" ";
+    }
+    cout&lt;&lt;endl;
+    <p>//Finding maximum</p>
+    int max = arr[0];
+    for(int i=1; i&lt;size; i++){
+        if(arr[i] > max){
+            max = arr[i];
+        }
+    }
+    cout&lt;&lt;"Maximum element is: "&lt;&lt;max;
+return 0;
+}</pre> 
+                <button class="arrayMax">Copy</button>
+            </div>
+
+            <div class="heading"><h3>10. Finding sum of elements in arrays</h3></div>
+            <div class="description">
+<pre class="text10"><p>//Finding sum of elements in arrays</p>
+#include &lt;iostream&gt;
+using namespace std;
+int main(){
+    int size;
+    cout<<"Enter size of array: ";
+    cin>>size;
+    int arr[100];
+    cout<<"Enter elements of array"&lt;&lt;endl;
+    <p>//Taking input</p>
+    for(int i=0; i&lt;size; i++){
+        cin>>arr[i];
+    }
+    <p>//Printing array</p>
+    for(int i=0; i&lt;size; i++){
+        cout&lt;&lt;arr[i]&lt;&lt;" ";
+    }
+    cout&lt;&lt;endl;
+    <p>//Finding sum of elements in array</p>
+    int sum=0;
+    for(int i=0; i&lt;size; i++){
+        sum=sum+arr[i];
+    }
+    cout&lt;&lt;"Sum of elements in array is: "&lt;&lt;sum;
+
+return 0;
+}</pre> 
+                <button class="arraySum">Copy</button>
+            </div>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
