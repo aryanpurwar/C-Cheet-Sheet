@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family:'Poppins';
+    background-color: #121212;
+}
+header{
+    height:80px;
+    background-color: #1E1E1E;
+    color:#FFD700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+main {
+    background-color:#121212;
+    color:  #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:20px 0;
+}
+main .heading{
+    height:30px;
+    width: 70%;
+}
+main .description{
+    width:70%;
+    height:fit-content;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    border:none;
+    border-radius:10px;
+    padding:1rem;
+    margin:1.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+main .description button{
+    width: 100px;
+    height:30px;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #fadede;
+    font-size:1rem;
+}
+main .description button:hover{
+    background-color: green;
+    color:white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+main pre{
+    font-family:'Fira Code';
+}
+.hide{
+    display: none;
+}
+main .description pre{
+    font-size:16px;
+}
+main .description p{
+    color:green;
+}
+
+@media(max-width:750px){
+    main .description{
+        width:fit-content;
+        /* background-color: aqua; */
+    }
+    main{
+        width:fit-content;
+        /* background-color: antiquewhite; */
+        font-size: smaller;
+    }
+}
