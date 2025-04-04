@@ -72,15 +72,41 @@ main .description p{
     color:green;
 }
 
-@media(max-width:750px){
-    main .description{
-        width:fit-content;
-        /* background-color: aqua; */
+@media (max-width: 750px) {
+    header h1 {
+        font-size: 15px;
     }
-    main{
-        width:fit-content;
-        /* background-color: antiquewhite; */
+
+    main {
+        width: 100%;
         font-size: smaller;
+    }
+
+    main .description {
+        width: 90%;
+        min-height: 180px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    main .description pre {
+        flex-grow: 1; 
+        font-size: 12px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    main .description button {
+        width: 80px;
+        height: 25px;
+        font-size: 10px;
+        align-self: flex-end; 
+    }
+
+    footer {
+        text-align: center;
+        font-size: 12px;
     }
 }
 
